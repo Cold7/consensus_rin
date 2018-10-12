@@ -1,0 +1,11 @@
+
+_____________________ CARMA _____________________
+
+./bin/linux/carma -max 8 -write -first 1 -last 1251 -min 0 MD2_aa.psf apoMD2_2-4.dcd
+./bin/linux/carma -max 8 -write -first 1251 -last 12501 -min 0 MD2_aa.psf apoMD2_2-4.dcd
+./bin/linux/carma -max 8 -write -first 12500 -min 0 MD2_aa.psf apoMD2_2-4.dcd
+
+
+_____________________ MD-TASK _____________________
+
+calc_network.py --threshold 8 --generate-plots --calc-BC --calc-L --topology ../md2.pdb ../apoMD2_2-4.dcd
